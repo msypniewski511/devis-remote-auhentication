@@ -1,3 +1,21 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron-sm {
+  width: 50%;
+  margin: auto;
+}
+#error_explanation {
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 10px;
+  color: rgba(255, 0, 0, 1);
+}
+.field_with_errors {
+  color: red;
+  input {
+    border-color: red;
+  }
+}
