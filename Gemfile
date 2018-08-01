@@ -18,7 +18,7 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-github'
 gem 'omniauth-facebook'
-
+gem 'omniauth-google-oauth2'
 
 group :development, :test do
   gem 'byebug'

@@ -13,4 +13,5 @@ class OmniauthCallbacksController < ApplicationController
   alias_method :twitter, :provider
   alias_method :facebook, :provider
   alias_method :github, :provider
+  alias_method :google_oauth2, :provider
 end
