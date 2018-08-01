@@ -1,5 +1,5 @@
 class OmniauthCallbacksController < ApplicationController
-  def twitter
+  def provider
     user = User.process_omniauth(request.env["omniauth.auth"])
     if user.persisted?
       flash.notice = "Sign in!"
@@ -9,4 +9,8 @@ class OmniauthCallbacksController < ApplicationController
       redirect_to new_user_registration_url
     end
   end
+
+  alias_method :twitter, :provider
+  alias_method :facebook, :provider
+  alias_method :github, :provider
 end

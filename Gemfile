@@ -16,6 +16,8 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'omniauth-github'
+gem 'omniauth-facebook'
 
 
 group :development, :test do
